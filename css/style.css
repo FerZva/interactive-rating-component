@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Overpass";
+  src: url("../font/Overpass-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+  font-family: "Overpass";
+  background-color: hsl(216, 12%, 8%);
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.rating-container_rating-numbers_span {
+  color: hsl(217, 12%, 63%);
+}
+
+main {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.rating-container {
+  width: 375px;
+  height: 371px;
+  padding: 32px;
+  background: linear-gradient(hsl(213, 19%, 18%), hsl(215, 27%, 12%));
+  border-radius: 20px;
+}
+.rating-container_img-container {
+  width: 43px;
+  height: 43px;
+  padding: 5px;
+  margin-bottom: 15px;
+  background-color: hsl(210, 19%, 18%);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+.rating-container h2 {
+  margin-bottom: 16px;
+}
+.rating-container_btn {
+  width: 310px;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-family: "Overpass";
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+.rating-container_btn:hover {
+  transition: 0.1s ease;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+.rating-container_rating-numbers {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.rating-container_rating-numbers_span {
+  width: 43px;
+  height: 43px;
+  padding: 5px;
+  display: grid;
+  place-items: center;
+  background-color: hsl(210, 19%, 18%);
+  border-radius: 50%;
+}
+.rating-container_rating-numbers_span:hover {
+  transition: 0.1s ease;
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.rating-container_rating-numbers_span.active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.thanks-container {
+  display: none;
+  width: 375px;
+  height: 371px;
+  padding: 32px;
+  background: linear-gradient(hsl(213, 19%, 18%), hsl(215, 27%, 12%));
+  border-radius: 20px;
+  text-align: center;
+}
+.thanks-container_img {
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+.thanks-container_selected {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: hsl(210, 19%, 18%);
+  width: 170px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thanks-container_selected_paraph {
+  color: hsl(25, 97%, 53%);
+}
+.thanks-container_h2 {
+  margin-bottom: 20px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,126 @@
+@use '_default';
+@use '_variables';
+
+main {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.rating-container {
+    width: 375px;
+    height: 371px;
+    padding: 32px;
+    background: linear-gradient(variables.$Dark-Blue, variables.$Dark-Blue-back);
+    border-radius: 20px;
+
+    &_img-container {
+        width: 43px;
+        height: 43px;
+        padding: 5px;
+        margin-bottom: 15px;
+        background-color: hsl(210, 19%, 18%);
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+    }
+
+    h2 {
+        margin-bottom: 16px;
+    }
+
+    &_btn {
+        width: 310px;
+        margin: 0 auto;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        font-family: "Overpass";
+        background-color: variables.$Orange;
+        color: variables.$White;
+        font-weight: variables.$weight-bold;
+        
+    }
+
+    &_btn:hover {
+        transition: 0.1s ease;
+        background-color: variables.$White;
+        color: variables.$Orange;
+        cursor: pointer;
+    }
+
+    &_rating-numbers {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0;
+
+        &_span {
+            width: 43px;
+            height: 43px;
+            padding: 5px;
+            display: grid;
+            place-items: center;
+            background-color: hsl(210, 19%, 18%);
+            border-radius: 50%;
+
+            &:hover {
+                transition: 0.1s ease;
+                background-color: variables.$Light-Grey;
+                color: variables.$White;
+                cursor: pointer;
+            }
+        }
+
+        &_span.active {
+            background-color: variables.$Orange;
+            color: variables.$White;
+        }
+    }
+}
+
+.thanks-container {
+    display: none;
+    width: 375px;
+    height: 371px;
+    padding: 32px;
+    background: linear-gradient(variables.$Dark-Blue, variables.$Dark-Blue-back);
+    border-radius: 20px;
+    text-align: center;
+
+    &_img {
+        margin-bottom: 20px;
+        margin: 0  auto;
+    }
+
+    &_selected {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        background-color: hsl(210, 19%, 18%);
+        width: 170px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_paraph {
+            color: variables.$Orange;
+        }
+    }
+
+    &_h2 {
+        margin-bottom: 20px;
+    }
+    
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

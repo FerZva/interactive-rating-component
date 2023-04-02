@@ -1,0 +1,34 @@
+@use '_variables';
+
+@font-face {
+    font-family: "Overpass";
+    src: url('../font/Overpass-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+    font-family: "Overpass";
+    background-color: variables.$Very-Dark-Blue;
+}
+
+h2 {
+    color: variables.$White;
+}
+
+p {
+    color: variables.$Light-Grey;
+    font-size: variables.$size;
+    font-weight: variables.$weight-slim;
+}
+
+.rating-container_rating-numbers_span {
+    color: variables.$Light-Grey;
+}
